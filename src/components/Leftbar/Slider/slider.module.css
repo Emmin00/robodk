@@ -1,0 +1,40 @@
+.slider_box {
+    position: relative; 
+    height: 20px;
+    padding: 5px 20px;
+    padding-right: 34px;
+}
+.slider {
+    position: relative;
+    height: 3px;
+    margin-top: 15px;
+}
+.slider_handle {
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    bottom: -6px;
+    cursor: pointer;
+}
+.track {
+    position: absolute;
+    height: 3px;
+    background-color: var(--blue);
+}
+.rail {
+    position: absolute;
+    height: 3px;
+    left: 14px;
+    right: 0;
+    background-color: var(--blue);
+    opacity: 0.15;
+}
+.meaning {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+    font-size: 14px;
+}
