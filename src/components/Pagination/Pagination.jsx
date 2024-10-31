@@ -25,6 +25,8 @@ const Pagination = ({filtred_robots}) => {
 
     }, [page, filtred_robots])
 
+    useEffect(() => history('/1'), [filtred_robots])
+
     const isActive = (n) => {
         return n === pageNum - 1 ? styles.active : ''
     }
