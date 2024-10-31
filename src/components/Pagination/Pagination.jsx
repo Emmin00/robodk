@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import styles from "./pagination.module.css"
 import Card from "../Card/Card"
 import { Link } from "react-router-dom"
@@ -12,6 +12,7 @@ const Pagination = ({filtred_robots}) => {
     const pages = new Array(numberOfPages).fill(null).map((_, index) => index)
     const pageNum = Number(page) || 1
     const [data, setData] = useState()
+    const history = useNavigate()
 
     useEffect(() => {
 
