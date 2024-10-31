@@ -1,0 +1,76 @@
+.nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 133px;
+    background-color: #fff;
+    z-index: 9999;
+    backface-visibility: hidden;
+}
+.container {
+    margin-top: 0 !important;
+    display: block;
+    padding-top: 0;
+    padding-top: 16px;
+    background-color: #fff;
+}
+.header {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--gray);
+    text-align: center;
+}
+.buttons {
+    height: 41px;
+    display: flex;
+}
+.button {
+    padding: 12px 19px;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button:hover:not(.active) {
+    background-color: var(--gray);
+    color: #fff;
+}
+.active {
+    background-color: var(--blue);
+    color: #fff;
+}
+.main_nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--blue);
+    margin-top: 0;
+    padding-top: 0;
+}
+.logo {
+    width: 176px;
+    background-image: url('https://robodk.com/img/robodk-logo.svg');
+    background-size: 100% 100%;
+    background-color: #fff;
+    height: 100%;
+    cursor: pointer;
+}
+.link {
+    display: inline-block;
+    height: 100%;
+    padding: 0 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: var(--blue);
+    vertical-align: middle;
+    align-content: center;
+}
+.link:hover {
+    text-decoration: underline #fff;
+}
