@@ -75,7 +75,7 @@ const Pagination = ({filtred_robots}) => {
                             </>
                 }
                 {
-                    pageNum === numberOfPages || <Link to={`/${pageNum + 1}`} className={styles.button}>{'>'}</Link> 
+                    (pageNum === numberOfPages || !numberOfPages) || <Link to={`/${pageNum + 1}`} className={styles.button}>{'>'}</Link> 
                 }
             </div>
         </div>
